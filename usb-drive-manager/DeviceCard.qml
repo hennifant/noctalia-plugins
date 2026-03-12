@@ -198,7 +198,7 @@ Rectangle {
                 visible: !(device?.isMounted ?? false)
                 Layout.fillWidth: true
                 text: pluginApi?.tr("device.action-mount") || "Mount"
-                icon: "hard-drive-upload"
+                icon: "plug-connected"
                 onClicked: root.mountRequested(device.path, root.displayLabel)
             }
 

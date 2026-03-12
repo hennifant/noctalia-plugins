@@ -8,7 +8,7 @@
     "mounted": "eingehängt",
     "refresh": "Aktualisieren",
     "empty": "Keine USB-Geräte erkannt",
-    "empty-hint": "Schließe einen USB-Stick an, um loszulegen",
+    "empty-hint": "Schließe ein USB-Laufwerk an, um loszulegen",
     "unmount-all": "Alle aushängen",
     "eject-all": "Alle auswerfen"
   },
@@ -52,7 +52,7 @@
     "notifications-desc": "Toast-Benachrichtigungen bei Einhänge-/Aushänge-/Auswurf-Ereignissen anzeigen",
     "section-browser": "Dateimanager",
     "file-browser": "Dateimanager-Befehl",
-    "file-browser-desc": "Befehl zum Öffnen des Dateimanagers (z.B. xdg-open, dolphin, thunar, nautilus)",
+    "file-browser-desc": "Befehl zum Öffnen des Dateimanagers (z.B. yazi, ranger, xdg-open, dolphin, thunar, nautilus)",
     "presets": "Voreinstellungen:",
     "section-requirements": "Systemvoraussetzungen",
     "requirements-desc": "Folgende Tools müssen installiert sein:"

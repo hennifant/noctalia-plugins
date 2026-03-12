@@ -31,7 +31,7 @@ A Noctalia bar widget for managing USB drives and removable storage devices.
 | Setting | Default | Description |
 |---|---|---|
 | Auto-mount | `false` | Automatically mount drives when plugged in |
-| File browser | `xdg-open` | Command to open the file manager |
+| File browser | `yazi` | Command to open the file manager (e.g. yazi, ranger, xdg-open, dolphin, thunar, nautilus) |
 | Notifications | `true` | Show toast notifications |
 | Hide when empty | `false` | Hide bar icon when no devices connected |
 | Icon color | `none` | Custom icon color |
@@ -49,11 +49,11 @@ A Noctalia bar widget for managing USB drives and removable storage devices.
 ## IPC
 
 ```bash
-# Refresh device list
-qs ipc call plugin:usb-drive-manager refresh
+# Refresh device list from a running Noctalia session
+qs -c noctalia-shell ipc call plugin:usb-drive-manager refresh
 
 # Unmount all devices
-qs ipc call plugin:usb-drive-manager unmountAll
+qs -c noctalia-shell ipc call plugin:usb-drive-manager unmountAll
 ```
 
 ## Notes
@@ -62,3 +62,4 @@ qs ipc call plugin:usb-drive-manager unmountAll
 - The "Eject" action first unmounts the partition, then powers off the parent disk
 - Disk usage is updated ~1 second after device enumeration
 - udevadm events are debounced (800ms) to avoid rapid re-queries during partition table reads
+
